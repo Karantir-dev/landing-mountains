@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: white;
+  background-color: #0b1d26;
+  font-family: $main-text-font, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+}
+
+.logo {
+  @extend %logo;
+}
+
+.bg-image {
+  margin: 0 auto;
+  max-width: 1920px;
+
+  background-image: url("../../images/BG-image.jpg");
+  background-repeat: no-repeat;
+
+  // background-size: ;
+}

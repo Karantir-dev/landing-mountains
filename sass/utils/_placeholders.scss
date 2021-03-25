@@ -1,0 +1,21 @@
+%topic {
+  font-family: $topics-font;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+%decoration-line::before {
+  content: "";
+  display: inline-block;
+  width: 72px;
+  height: 2px;
+  margin: 0 24px 6px 0;
+  background-color: $accent-color;
+}
+
+%logo {
+  font-size: 32px;
+  font-family: $headings-font;
+  letter-spacing: 0.01em;
+}

@@ -1,0 +1,22 @@
+.header {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+
+  & > li:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.header__account {
+  color: inherit;
+  background-color: transparent;
+  border: none;
+}
