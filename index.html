@@ -10,7 +10,7 @@
 
   <body>
     <div class="bg-image">
-      <header class="header">
+      <header class="header" id="position00">
         <a href="" class="logo">MNTN</a>
         <nav>
           <ul class="header__nav">
@@ -45,28 +45,18 @@
               Be prepared for the Mountains and beyond!
             </h1>
 
-            <a class="hero__scroll-down" href=""
+            <a class="hero__scroll-down" href="#position01"
               >scroll down
               <svg width="16px" height="24px">
                 <use href="./images/symbol-defs.svg#icon-arrow"></use>
               </svg>
             </a>
           </div>
-
-          <div class="slider">
-            <ul class="slider__list">
-              <li><a class="slider__link" href="">Start</a></li>
-              <li><a class="slider__link" href="">01</a></li>
-              <li><a class="slider__link" href="">02</a></li>
-              <li><a class="slider__link" href="">03</a></li>
-            </ul>
-            <div class="slider__decoration-line"></div>
-          </div>
         </section>
 
         <div class="section-collection">
           <!-- Секция №1 -->
-          <section class="section">
+          <section class="section" id="position01">
             <div class="section__text-wrapper">
               <span class="section__number">01</span>
               <p class="section__topic">Get Started</p>
@@ -95,7 +85,7 @@
           </section>
 
           <!-- Секция №2 -->
-          <section class="section">
+          <section class="section" id="position02">
             <div class="section__text-wrapper">
               <span class="section__number">02</span>
               <p class="section__topic">Hiking Essentials</p>
@@ -118,7 +108,7 @@
           </section>
 
           <!-- Секция №3 -->
-          <section class="section">
+          <section class="section" id="position03">
             <div class="section__text-wrapper">
               <span class="section__number">03</span>
               <p class="section__topic">where you go is the key</p>
@@ -174,6 +164,18 @@
           </ul>
         </div>
       </footer>
+
+      <div class="slider-container">
+        <div class="slider">
+          <ul class="slider__list">
+            <li><a class="slider__link" href="#position00">Start</a></li>
+            <li><a class="slider__link" href="#position01">01</a></li>
+            <li><a class="slider__link" href="#position02">02</a></li>
+            <li><a class="slider__link" href="#position03">03</a></li>
+          </ul>
+          <div class="slider__decoration-line"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,30 @@
+.slider {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 40vh;
+  right: 80px;
+}
+
+.slider__decoration-line {
+  display: inline-block;
+  width: 3px;
+  height: 240px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slider__link {
+  display: block;
+  width: 75px;
+  height: 60px;
+  padding-right: 32px;
+  text-align: end;
+  line-height: 60px;
+}
+
+.slider-container {
+  position: absolute;
+  top: 40vh;
+  right: 80px;
+  height: 100%;
+}

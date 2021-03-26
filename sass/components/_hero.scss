@@ -20,6 +20,7 @@
 }
 
 .hero__content {
+  margin: 0 auto;
   max-width: 950px;
 }
 
@@ -41,26 +42,4 @@
   align-items: center;
   justify-content: space-between;
   min-width: 125px;
-}
-
-// Slider
-.slider {
-  display: flex;
-  align-items: center;
-}
-
-.slider__decoration-line {
-  display: inline-block;
-  width: 3px;
-  height: 240px;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.slider__link {
-  display: block;
-  width: 75px;
-  height: 60px;
-  padding-right: 32px;
-  text-align: end;
-  line-height: 60px;
 }
