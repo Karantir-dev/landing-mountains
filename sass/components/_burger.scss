@@ -1,0 +1,47 @@
+.burger {
+  width: 40px;
+  height: 30px;
+  padding: 14px 0;
+  position: relative;
+
+  & > span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+
+    transition: 250ms;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+
+    transition: 250ms;
+  }
+  &::after {
+    top: 0;
+  }
+  &::before {
+    bottom: 0;
+  }
+}
+
+.burger.close > span {
+  opacity: 0;
+}
+
+.burger.close::after {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+.burger.close::before {
+  bottom: 14px;
+  transform: rotate(45deg);
+}

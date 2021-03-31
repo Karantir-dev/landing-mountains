@@ -11,34 +11,47 @@
   <body>
     <div class="bg-image">
       <header class="header" id="position00">
-        <a href="" class="logo">MNTN</a>
-        <nav>
-          <ul class="header__nav">
-            <li><a href="" class="">Equipment</a></li>
-            <li><a href="" class="">About us</a></li>
-            <li><a href="" class="">Blog</a></li>
-          </ul>
-        </nav>
-        <button type="button" class="header__account">Account</button>
-      </header>
+        <span class="logo">MNTN</span>
 
-      <main>
-        <!-- Герой -->
-        <section class="hero">
-          <div class="hero__social-net">
-            <span class="social-net__text">Follow us</span>
-            <a href="">
+        <div class="header__dropdown" data-dropdown>
+          <nav>
+            <ul class="header__nav">
+              <li class="dropdown__item"><a href="">Equipment</a></li>
+              <li class="dropdown__item"><a href="">About us</a></li>
+              <li class="dropdown__item"><a href="">Blog</a></li>
+            </ul>
+          </nav>
+
+          <button type="button" class="header__account">
+            <svg width="40px" height="20px">
+              <use href="./images/symbol-defs.svg#icon-account"></use>
+            </svg>
+            Account
+          </button>
+
+          <div class="header__social-net">
+            <span>Follow us</span>
+            <a class="social-net__link">
               <svg width="20px" height="20px">
                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </a>
-            <a href="">
+            <a class="social-net__link">
               <svg width="20px" height="20px">
                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </a>
           </div>
+        </div>
 
+        <div class="burger" data-burger>
+          <span></span>
+        </div>
+      </header>
+
+      <main>
+        <!-- Герой -->
+        <section class="hero">
           <div class="hero__content">
             <p class="hero__topic">A Hiking guide</p>
             <h1 class="hero__heading">
@@ -54,8 +67,7 @@
           </div>
         </section>
 
-        <div class="section-collection">
-          <!-- Секция №1 -->
+        <!-- <div class="section-collection">
           <section class="section" id="position01">
             <div class="section__text-wrapper">
               <span class="section__number">01</span>
@@ -84,7 +96,6 @@
             />
           </section>
 
-          <!-- Секция №2 -->
           <section class="section" id="position02">
             <div class="section__text-wrapper">
               <span class="section__number">02</span>
@@ -107,7 +118,6 @@
             <img src="./images/01_2photo.jpg" alt="tourist" title="tourist" />
           </section>
 
-          <!-- Секция №3 -->
           <section class="section" id="position03">
             <div class="section__text-wrapper">
               <span class="section__number">03</span>
@@ -130,10 +140,10 @@
             </div>
             <img src="./images/01_3photo.jpg" alt="compass" title="compass" />
           </section>
-        </div>
+        </div> -->
       </main>
 
-      <footer class="footer">
+      <!-- <footer class="footer">
         <div class="">
           <span class="logo">MNTN</span>
           <p class="footer__MNTN-wish">
@@ -163,9 +173,9 @@
             <li class="footer__link"><a href="">Press</a></li>
           </ul>
         </div>
-      </footer>
+      </footer> -->
 
-      <div class="slider-container">
+      <!-- <div class="slider-container">
         <div class="slider">
           <ul class="slider__list">
             <li><a class="slider__link" href="#position00">Start</a></li>
@@ -175,7 +185,9 @@
           </ul>
           <div class="slider__decoration-line"></div>
         </div>
-      </div>
+      </div>-->
     </div>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

@@ -2,21 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 140px 80px;
+  padding: 80px 20px;
+  // padding: 140px 80px;
   margin-bottom: 700px;
-}
-
-.hero__social-net {
-  display: flex;
-  flex-direction: column;
-
-  & > a {
-    margin-top: 24px;
-  }
-}
-
-.social-net__text {
-  writing-mode: vertical-rl;
 }
 
 .hero__content {
@@ -33,7 +21,8 @@
 .hero__heading {
   margin-bottom: 32px;
   font-family: $headings-font;
-  font-size: 88px;
+  font-size: 3rem;
+  // font-size: 5.5rem;
   line-height: 1.1;
 }
 
