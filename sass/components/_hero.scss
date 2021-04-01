@@ -1,34 +1,60 @@
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 80px 20px;
-  // padding: 140px 80px;
   margin-bottom: 700px;
+
+  @media screen and($tablet-min-width) {
+    padding: 135px 120px;
+  }
 }
 
 .hero__content {
-  margin: 0 auto;
-  max-width: 950px;
+  max-width: 400px;
+  @media screen and($tablet-min-width ) {
+    max-width: 600px;
+  }
+
+  @media screen and($desktop-min-width) {
+    max-width: 950px;
+  }
 }
 
 .hero__topic {
   @extend %topic;
   @extend %decoration-line;
   margin-bottom: 32px;
+
+  @media screen and ($mobile-max-width) {
+    font-size: 0.8rem;
+  }
 }
 
 .hero__heading {
   margin-bottom: 32px;
   font-family: $headings-font;
-  font-size: 3rem;
-  // font-size: 5.5rem;
+  font-size: 2.5rem;
   line-height: 1.1;
+
+  @media screen and ($tablet-min-width) {
+    font-size: 4rem;
+  }
+
+  @media screen and($desktop-min-width) {
+    font-size: 5.5rem;
+  }
 }
 
 .hero__scroll-down {
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  min-width: 125px;
+
+  @media screen and($mobile-max-width ) {
+    font-size: 1rem;
+  }
+}
+
+.scroll-down__arrow {
+  margin-left: 15px;
 }

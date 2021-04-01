@@ -193,10 +193,17 @@ summary {
 .hero__topic::before, .section__topic::before {
   content: "";
   display: inline-block;
-  width: 72px;
+  width: 50px;
   height: 2px;
-  margin: 0 24px 6px 0;
+  margin: 0 24px 0 0;
+  vertical-align: middle;
   background-color: #fbd784;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__topic::before, .section__topic::before {
+    width: 72px;
+  }
 }
 
 .logo {
@@ -277,6 +284,20 @@ button {
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    min-height: 100px;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 0 80px;
+    height: 155px;
+  }
+}
+
 .header__dropdown {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,6 +324,25 @@ button {
   transition: 250ms;
 }
 
+@media screen and (min-width: 768px) {
+  .header__dropdown {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: auto;
+    position: static;
+    font-size: 1.125rem;
+    background-color: transparent;
+    -webkit-transform: initial;
+            transform: initial;
+    opacity: 1;
+  }
+}
+
 .header__dropdown.shown {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -310,6 +350,10 @@ button {
 }
 
 .header__nav {
+  margin: 0 auto;
+}
+
+.nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,8 +363,26 @@ button {
           flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .nav__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav__list > li:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
 .dropdown__item {
   padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown__item {
+    padding: 0;
+  }
 }
 
 .header__account {
@@ -330,14 +392,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
   color: inherit;
   background-color: transparent;
   border: none;
 }
 
 .header__social-net {
-  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,9 +406,34 @@ button {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .header__social-net {
+    position: absolute;
+    top: 270px;
+    left: 40px;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    min-height: 160px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__social-net {
+    top: 360px;
+    left: 80px;
+  }
+}
+
 .social-net__link {
   margin-left: 20px;
   line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .social-net__link {
+    margin: 20px 0 0 0;
+  }
 }
 
 .hero {
@@ -358,27 +443,61 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 80px 20px;
   margin-bottom: 700px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 135px 120px;
+  }
+}
+
 .hero__content {
-  margin: 0 auto;
-  max-width: 950px;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__content {
+    max-width: 950px;
+  }
 }
 
 .hero__topic {
   margin-bottom: 32px;
 }
 
+@media screen and (max-width: 767px) {
+  .hero__topic {
+    font-size: 0.8rem;
+  }
+}
+
 .hero__heading {
   margin-bottom: 32px;
   font-family: "ChronicleDisp-Semibold";
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.1;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__heading {
+    font-size: 5.5rem;
+  }
 }
 
 .hero__scroll-down {
@@ -388,10 +507,16 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-width: 125px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__scroll-down {
+    font-size: 1rem;
+  }
+}
+
+.scroll-down__arrow {
+  margin-left: 15px;
 }
 
 .section {
@@ -579,6 +704,12 @@ button {
 
 .burger::before {
   bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
 }
 
 .burger.close > span {

@@ -8,10 +8,15 @@
 %decoration-line::before {
   content: "";
   display: inline-block;
-  width: 72px;
+  width: 50px;
   height: 2px;
-  margin: 0 24px 6px 0;
+  margin: 0 24px 0 0;
+  vertical-align: middle;
   background-color: $accent-color;
+
+  @media screen and ($tablet-min-width) {
+    width: 72px;
+  }
 }
 
 %logo {

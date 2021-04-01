@@ -31,6 +31,10 @@
   &::before {
     bottom: 0;
   }
+
+  @media screen and($tablet-min-width) {
+    display: none;
+  }
 }
 
 .burger.close > span {
