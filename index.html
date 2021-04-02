@@ -88,12 +88,35 @@
                 </svg>
               </button>
             </div>
-            <img
-              src="./images/011_photo.jpg"
-              width="566px"
-              alt="tourist"
-              title="tourist"
-            />
+
+            <picture>
+              <source srcset="" />
+              <img
+                class="section__img"
+                src="./images/01.jpg"
+                alt="tourist"
+                title="tourist"
+              />
+            </picture>
+
+            <!-- <picture class="articles__image">
+              <source
+                srcset="./images/01_200х254.jpg"
+                type="image/jpeg"
+                media="(max-width:767px)"
+              />
+              <source
+                srcset="./images/01_370х471.jpg"
+                type="image/jpeg"
+                media=" (max-width:1299px)"
+              />
+              <source
+                srcset="./images/01.jpg"
+                type="image/jpeg"
+                media="(min-width:1300px)"
+              />
+              <img src="./images/01.jpg" alt="турист идёт" />
+            </picture> -->
           </section>
 
           <section class="section" id="position02">
@@ -115,7 +138,12 @@
                 </svg>
               </button>
             </div>
-            <img src="./images/01_2photo.jpg" alt="tourist" title="tourist" />
+            <img
+              class="section__img"
+              src="./images/02.jpg"
+              alt="tourist"
+              title="tourist"
+            />
           </section>
 
           <section class="section" id="position03">
@@ -138,13 +166,18 @@
                 </svg>
               </button>
             </div>
-            <img src="./images/01_3photo.jpg" alt="compass" title="compass" />
+            <img
+              class="section__img"
+              src="./images/03.jpg"
+              alt="compass"
+              title="compass"
+            />
           </section>
         </div>
       </main>
 
-      <!-- <footer class="footer">
-        <div class="">
+      <footer class="footer">
+        <div class="footer__info">
           <span class="logo">MNTN</span>
           <p class="footer__MNTN-wish">
             Get out there & discover your next slope, mountain & destination!
@@ -154,26 +187,30 @@
           </p>
         </div>
 
-        <div class="footer__central-component">
-          <p class="footer__links-heading">More on The Blog</p>
-          <ul>
-            <li class="footer__link"><a href="">About MNTN</a></li>
-            <li class="footer__link"><a href="">Contributors & Writers</a></li>
-            <li class="footer__link"><a href="">Write For Us</a></li>
-            <li class="footer__link"><a href="">Contact Us</a></li>
-            <li class="footer__link"><a href="">Privacy Policy</a></li>
-          </ul>
-        </div>
+        <div class="footer__more-block">
+          <div class="more-block__item">
+            <p class="footer__links-heading">More on The Blog</p>
+            <ul>
+              <li class="footer__link"><a href="">About MNTN</a></li>
+              <li class="footer__link">
+                <a href="">Contributors & Writers</a>
+              </li>
+              <li class="footer__link"><a href="">Write For Us</a></li>
+              <li class="footer__link"><a href="">Contact Us</a></li>
+              <li class="footer__link"><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
 
-        <div class="">
-          <p class="footer__links-heading">More on MNTN</p>
-          <ul>
-            <li class="footer__link"><a href="">The Team</a></li>
-            <li class="footer__link"><a href="">Jobs</a></li>
-            <li class="footer__link"><a href="">Press</a></li>
-          </ul>
+          <div>
+            <p class="footer__links-heading">More on MNTN</p>
+            <ul>
+              <li class="footer__link"><a href="">The Team</a></li>
+              <li class="footer__link"><a href="">Jobs</a></li>
+              <li class="footer__link"><a href="">Press</a></li>
+            </ul>
+          </div>
         </div>
-      </footer> -->
+      </footer>
 
       <!-- <div class="slider-container">
         <div class="slider">
@@ -185,7 +222,7 @@
           </ul>
           <div class="slider__decoration-line"></div>
         </div>
-      </div>-->
+      </div> -->
     </div>
 
     <script src="./js/index.js"></script>

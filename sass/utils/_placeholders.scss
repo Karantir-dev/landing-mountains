@@ -3,6 +3,10 @@
   letter-spacing: 6px;
   text-transform: uppercase;
   color: $accent-color;
+
+  @media screen and ($mobile-max-width) {
+    font-size: 0.8rem;
+  }
 }
 
 %decoration-line::before {

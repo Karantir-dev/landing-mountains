@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 80px 20px;
-  margin-bottom: 700px;
+  padding: 140px 20px;
+  margin-bottom: 200px;
 
   @media screen and($tablet-min-width) {
     padding: 135px 120px;
+    margin-bottom: 700px;
   }
 }
 
@@ -25,10 +26,6 @@
   @extend %topic;
   @extend %decoration-line;
   margin-bottom: 32px;
-
-  @media screen and ($mobile-max-width) {
-    font-size: 0.8rem;
-  }
 }
 
 .hero__heading {
