@@ -1,19 +1,18 @@
-.slider {
+.vidget {
   display: flex;
   align-items: center;
   position: sticky;
   top: 40vh;
-  right: 80px;
 }
 
-.slider__decoration-line {
+.vidget__decoration-line {
   display: inline-block;
   width: 3px;
   height: 240px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.slider__link {
+.vidget__link {
   display: block;
   width: 75px;
   height: 60px;
@@ -22,9 +21,17 @@
   line-height: 60px;
 }
 
-.slider-container {
+.vidget-container {
   position: absolute;
   top: 40vh;
-  right: 80px;
-  height: 100%;
+  right: 40px;
+  height: calc(100% - 1100px);
+
+  @media screen and($mobile-max-width) {
+    display: none;
+  }
+
+  @media screen and($desktop-min-width) {
+    right: 80px;
+  }
 }

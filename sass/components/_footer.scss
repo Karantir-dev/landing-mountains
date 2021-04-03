@@ -1,12 +1,18 @@
 .footer {
   display: flex;
-  flex-direction: column-reverse;
+
   padding: 0 20px;
 
+  @media screen and($tablet-max-width) {
+    flex-direction: column-reverse;
+  }
+
   @media screen and($tablet-min-width) {
+    padding: 0 40px;
+
     // width: 1460px;
     // margin: 0 auto 120px auto;
-    //
+
     // justify-content: space-between;
   }
 
@@ -18,14 +24,17 @@
   &__more-block {
     display: flex;
     justify-content: space-between;
+
+    @media screen and($tablet-min-width) {
+      justify-content: space-around;
+    }
   }
 
   &__MNTN-wish {
-    margin: 24px 0 40px 0;
     line-height: 1.8;
+    margin: 24px 0 40px 0;
 
-    @media screen and($tablet-min-width) {
-      margin: 24px 0 120px 0;
+    @media screen and($desktop-min-width) {
       width: 300px;
     }
   }
@@ -63,6 +72,6 @@
 .more-block__item {
   margin-right: 20px;
   @media screen and($tablet-min-width) {
-    margin: 0 210px 0 auto;
+    // margin: 0 210px 0 auto;
   }
 }
