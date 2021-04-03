@@ -1,6 +1,6 @@
 .section {
-  padding: 0 20px;
-  margin: 0 auto 200px auto;
+  padding: 100px 20px;
+  margin: 0 auto;
   @media screen and($desktop-min-width) {
     // width: 1460px;
     // height: 720px;
@@ -88,4 +88,12 @@
   @media screen and($tablet-min-width) {
     flex-direction: row-reverse;
   }
+}
+
+.section-collection > section:first-child {
+  background-image: linear-gradient(
+    180deg,
+    rgba(11, 29, 38, 0) 0%,
+    #0b1d26 30%
+  );
 }

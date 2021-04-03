@@ -270,8 +270,14 @@ button {
   position: relative;
   margin: 0 auto;
   max-width: 1920px;
-  background-image: url("../images/1818px.jpg");
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .bg-image {
+    background-image: url("../images/1818px.jpg");
+    background-size: 600px;
+  }
 }
 
 .header {
@@ -382,7 +388,7 @@ button {
 }
 
 .dropdown__item {
-  padding: 10px;
+  padding: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -451,8 +457,8 @@ button {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 140px 20px;
-  margin-bottom: 200px;
+  padding: 100px 20px;
+  margin-bottom: 320px;
 }
 
 @media screen and (min-width: 768px) {
@@ -521,8 +527,8 @@ button {
 }
 
 .section {
-  padding: 0 20px;
-  margin: 0 auto 200px auto;
+  padding: 100px 20px;
+  margin: 0 auto;
 }
 
 .section__number {
@@ -618,6 +624,11 @@ button {
   }
 }
 
+.section-collection > section:first-child {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 29, 38, 0)), color-stop(30%, #0b1d26));
+  background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 30%);
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,6 +697,10 @@ button {
     font-size: 1.125rem;
     margin-top: 16px;
   }
+}
+
+.more-block__item {
+  margin-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
