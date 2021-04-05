@@ -59,9 +59,14 @@ button {
     background-size: 930px;
   }
 
-  @media screen and($tablet-min-width) {
+  @media screen and($tablet-min-width) and($tablet-max-width) {
     background-image: url("../images/BG-image.jpg");
     background-size: 1400px;
+  }
+
+  @media screen and($desktop-min-width) {
+    background-image: url("../images/BG-image.jpg");
+    background-size: 1920px;
   }
 }
 

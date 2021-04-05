@@ -1,21 +1,26 @@
 .section {
   display: flex;
-  padding: 100px 20px;
   position: relative;
 
-  @media screen and($tablet-min-width) {
+  @media screen and($mobile-max-width) {
+    padding: 100px 20px;
+  }
+
+  @media screen and($tablet-min-width) and($tablet-max-width) {
     padding: 100px 20px 100px 60px;
     min-width: 550px;
     margin-bottom: 150px;
   }
 
   @media screen and($desktop-min-width) {
-    // width: 1460px;
-    // height: 720px;
+    padding: 0 170px 0 80px;
+    margin-bottom: 200px;
+    width: 100%;
+    max-width: 1712px;
+    height: 720px;
 
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__number {
@@ -31,17 +36,26 @@
       font-size: 240px;
       line-height: 240px;
     }
+
+    @media screen and($desktop-min-width) {
+      left: -150px;
+    }
   }
 
   &__text-wrapper {
     position: relative;
-    @media screen and($tablet-min-width) {
+    @media screen and($tablet-min-width) and($tablet-max-width) {
       max-width: 400px;
       z-index: 2;
       background-color: rgba(11, 29, 38, 0.6);
       padding: 20px;
       border-radius: 20px;
-      // margin: 0 100px 0 auto;
+    }
+
+    @media screen and($desktop-min-width) {
+      max-width: 632px;
+      margin: 0 0 0 150px;
+      margin-right: 20px;
     }
   }
 
@@ -111,10 +125,16 @@
 }
 
 .section-collection {
-  margin-right: 120px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
+  @media screen and($tablet-min-width) and($tablet-max-width) {
+    margin-right: 120px;
+  }
+
+  @media screen and($desktop-min-width) {
+    align-items: center;
+  }
 }
 
 .section-collection > section:nth-child(2n) {
@@ -127,12 +147,4 @@
   @media screen and($tablet-max-width) {
     left: 40px;
   }
-}
-
-.section-collection > section:first-child {
-  background-image: linear-gradient(
-    180deg,
-    rgba(11, 29, 38, 0) 0%,
-    #0b1d26 30%
-  );
 }

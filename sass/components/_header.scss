@@ -9,12 +9,18 @@
 
   @media screen and($tablet-min-width ) {
     min-height: 100px;
+    margin-bottom: 135px;
     padding: 0 40px;
   }
 
   @media screen and($desktop-min-width) {
+    margin-bottom: 135px;
     padding: 0 80px;
-    height: 155px;
+    height: 152px;
+  }
+
+  &__nav {
+    margin: 0 auto;
   }
 }
 
@@ -46,10 +52,6 @@
 .header__dropdown.shown {
   transform: translateY(0);
   opacity: 1;
-}
-
-.header__nav {
-  margin: 0 auto;
 }
 
 .nav__list {
@@ -91,7 +93,7 @@
     top: 270px;
     left: 40px;
     writing-mode: vertical-lr;
-    min-height: 160px;
+    min-height: 173px;
   }
 
   @media screen and($desktop-min-width) {
@@ -101,10 +103,13 @@
 }
 
 .social-net__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  padding: 2px;
   margin-left: 20px;
-  line-height: 1;
 
   @media screen and($tablet-min-width) {
-    margin: 20px 0 0 0;
+    margin: 24px 0 0 0;
   }
 }
