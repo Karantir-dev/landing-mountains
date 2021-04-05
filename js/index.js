@@ -3,6 +3,11 @@ const dropdown = document.querySelector("[data-dropdown]");
 const body = document.querySelector("[data-no-scroll]");
 
 burger.addEventListener("click", toggleClassBurger);
+dropdown.addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) {
+    toggleClassBurger();
+  }
+});
 
 function toggleClassBurger() {
   dropdown.classList.toggle("shown");

@@ -400,12 +400,13 @@ button {
   }
 }
 
-.dropdown__item {
+.dropdown__link {
+  display: block;
   padding: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .dropdown__item {
+  .dropdown__link {
     padding: 0;
   }
 }
@@ -422,6 +423,12 @@ button {
   border: none;
 }
 
+@media screen and (max-width: 767px) {
+  .header__account {
+    padding: 20px;
+  }
+}
+
 .header__social-net {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -429,6 +436,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header__social-net {
+    padding: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
