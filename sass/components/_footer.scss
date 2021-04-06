@@ -73,6 +73,10 @@
     margin-top: 10px;
     line-height: 1.8;
 
+    &:hover {
+      color: $accent-color;
+    }
+
     @media screen and($tablet-min-width) {
       font-size: 1.125rem;
       margin-top: 16px;
@@ -82,7 +86,4 @@
 
 .more-block__item {
   margin-right: 20px;
-  @media screen and($tablet-min-width) {
-    // margin: 0 210px 0 auto;
-  }
 }
