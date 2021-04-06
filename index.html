@@ -9,211 +9,216 @@
   </head>
 
   <body data-no-scroll>
-    <div class="bg-image">
-      <header class="header" id="position00">
-        <span class="logo">MNTN</span>
+    <div class="bg-image" data-blur></div>
+    <header class="header" id="position00">
+      <span class="logo" data-blur>MNTN</span>
 
-        <div class="header__dropdown" data-dropdown>
-          <nav class="header__nav">
-            <ul class="nav__list">
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="">Equipment</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="">About us</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="">Blog</a>
-              </li>
-            </ul>
-          </nav>
+      <div class="header__dropdown" data-dropdown>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="dropdown__item">
+              <a class="dropdown__link" href="">Equipment</a>
+            </li>
+            <li class="dropdown__item">
+              <a class="dropdown__link" href="">About us</a>
+            </li>
+            <li class="dropdown__item">
+              <a class="dropdown__link" href="">Blog</a>
+            </li>
+          </ul>
+        </nav>
 
-          <button type="button" class="header__account">
-            <svg width="40px" height="20px">
-              <use href="./images/symbol-defs.svg#icon-account"></use>
+        <button type="button" class="header__account">
+          <svg width="40px" height="20px">
+            <use href="./images/symbol-defs.svg#icon-account"></use>
+          </svg>
+          Account
+        </button>
+
+        <div class="header__social-net">
+          <span>Follow us</span>
+          <a class="social-net__link" href="https://www.instagram.com/">
+            <svg width="20px" height="20px">
+              <use href="./images/symbol-defs.svg#icon-instagram"></use>
             </svg>
-            Account
-          </button>
-
-          <div class="header__social-net">
-            <span>Follow us</span>
-            <a class="social-net__link" href="https://www.instagram.com/">
-              <svg width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-            <a class="social-net__link" href="https://twitter.com/">
-              <svg width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </div>
+          </a>
+          <a class="social-net__link" href="https://twitter.com/">
+            <svg width="20px" height="20px">
+              <use href="./images/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
         </div>
+      </div>
 
-        <div class="burger" data-burger>
-          <span></span>
+      <div class="burger" data-burger>
+        <span></span>
+      </div>
+    </header>
+
+    <main data-blur>
+      <!-- Герой -->
+      <section class="hero">
+        <div class="hero__content">
+          <p class="hero__topic">A Hiking guide</p>
+          <h1 class="hero__heading">
+            Be prepared for the Mountains and beyond!
+          </h1>
+
+          <a class="hero__scroll-down" href="#position01"
+            >scroll down
+            <svg class="scroll-down__arrow" width="16px" height="24px">
+              <use href="./images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </a>
         </div>
-      </header>
+      </section>
 
-      <main>
-        <!-- Герой -->
-        <section class="hero">
-          <div class="hero__content">
-            <p class="hero__topic">A Hiking guide</p>
-            <h1 class="hero__heading">
-              Be prepared for the Mountains and beyond!
-            </h1>
-
-            <a class="hero__scroll-down" href="#position01"
-              >scroll down
-              <svg class="scroll-down__arrow" width="16px" height="24px">
-                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+      <div class="section-collection">
+        <section class="section" id="position01">
+          <div class="section__text-wrapper">
+            <span class="section__number">01</span>
+            <p class="section__topic">Get Started</p>
+            <h2 class="section__heading">What level of hiker are you?</h2>
+            <p class="section__text">
+              Determining what level of hiker you are can be an important tool
+              when planning future hikes. This hiking level guide will help you
+              plan hikes according to different hike ratings set by various
+              websites like All Trails and Modern Hiker. What type of hiker are
+              you – novice, moderate, advanced moderate, expert, or expert
+              backpacker?
+            </p>
+            <button class="section__btn">
+              read more
+              <svg class="section__arrow" width="24px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
               </svg>
-            </a>
+            </button>
           </div>
+
+          <picture class="section__img">
+            <source
+              srcset="./images/01_350px.jpg"
+              type="image/jpeg"
+              media="(max-width:1199px)"
+            />
+            <img src="./images/01.jpg" alt="tourist" title="tourist" />
+          </picture>
         </section>
 
-        <div class="section-collection">
-          <section class="section" id="position01">
-            <div class="section__text-wrapper">
-              <span class="section__number">01</span>
-              <p class="section__topic">Get Started</p>
-              <h2 class="section__heading">What level of hiker are you?</h2>
-              <p class="section__text">
-                Determining what level of hiker you are can be an important tool
-                when planning future hikes. This hiking level guide will help
-                you plan hikes according to different hike ratings set by
-                various websites like All Trails and Modern Hiker. What type of
-                hiker are you – novice, moderate, advanced moderate, expert, or
-                expert backpacker?
-              </p>
-              <button class="section__btn">
-                read more
-                <svg class="section__arrow" width="24px" height="16px">
-                  <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
-            </div>
-
-            <picture class="section__img">
-              <source
-                srcset="./images/01_350px.jpg"
-                type="image/jpeg"
-                media="(max-width:1199px)"
-              />
-              <img src="./images/01.jpg" alt="tourist" title="tourist" />
-            </picture>
-          </section>
-
-          <section class="section" id="position02">
-            <div class="section__text-wrapper">
-              <span class="section__number">02</span>
-              <p class="section__topic">Hiking Essentials</p>
-              <h2 class="section__heading">Picking the right Hiking Gear!</h2>
-              <p class="section__text">
-                The nice thing about beginning hiking is that you don’t really
-                need any special gear, you can probably get away with things you
-                already have. Let’s start with clothing. A typical mistake
-                hiking beginners make is wearing jeans and regular clothes,
-                which will get heavy and chafe wif they get sweaty or wet.
-              </p>
-              <button class="section__btn">
-                read more
-                <svg class="section__arrow" width="24px" height="16px">
-                  <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
-            </div>
-
-            <picture class="section__img">
-              <source
-                srcset="./images/02_350px.jpg"
-                type="image/jpeg"
-                media="(max-width:1199px)"
-              />
-              <img src="./images/02.jpg" alt="tourist" title="tourist" />
-            </picture>
-          </section>
-
-          <section class="section" id="position03">
-            <div class="section__text-wrapper">
-              <span class="section__number">03</span>
-              <p class="section__topic">where you go is the key</p>
-              <h2 class="section__heading">Understand Your Map & Timing</h2>
-              <p class="section__text">
-                To start, print out the hiking guide and map. If it’s raining,
-                throw them in a Zip-Lock bag. Read over the guide, study the
-                map, and have a good idea of what to expect. I like to know what
-                my next landmark is as I hike. For example, I’ll read the guide
-                and know that say, in a mile, I make a right turn at the
-                junction..
-              </p>
-              <button class="section__btn">
-                read more
-                <svg class="section__arrow" width="24px" height="16px">
-                  <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
-            </div>
-
-            <picture class="section__img">
-              <source
-                srcset="./images/03_350px.jpg"
-                type="image/jpeg"
-                media="(max-width:1199px)"
-              />
-              <img src="./images/03.jpg" alt="tourist" title="tourist" />
-            </picture>
-          </section>
-        </div>
-      </main>
-
-      <footer class="footer">
-        <div class="footer__info">
-          <span class="logo">MNTN</span>
-          <p class="footer__MNTN-wish">
-            Get out there & discover your next slope, mountain & destination!
-          </p>
-          <p class="footer__copyright">
-            Copyright 2019 MNTN, Inc. Terms & Privacy
-          </p>
-        </div>
-
-        <div class="footer__more-block">
-          <div class="more-block__item">
-            <p class="footer__links-heading">More on The Blog</p>
-            <ul>
-              <li class="footer__link"><a href="">About MNTN</a></li>
-              <li class="footer__link">
-                <a href="">Contributors & Writers</a>
-              </li>
-              <li class="footer__link"><a href="">Write For Us</a></li>
-              <li class="footer__link"><a href="">Contact Us</a></li>
-              <li class="footer__link"><a href="">Privacy Policy</a></li>
-            </ul>
+        <section class="section" id="position02">
+          <div class="section__text-wrapper">
+            <span class="section__number">02</span>
+            <p class="section__topic">Hiking Essentials</p>
+            <h2 class="section__heading">Picking the right Hiking Gear!</h2>
+            <p class="section__text">
+              The nice thing about beginning hiking is that you don’t really
+              need any special gear, you can probably get away with things you
+              already have. Let’s start with clothing. A typical mistake hiking
+              beginners make is wearing jeans and regular clothes, which will
+              get heavy and chafe wif they get sweaty or wet.
+            </p>
+            <button class="section__btn">
+              read more
+              <svg class="section__arrow" width="24px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
           </div>
 
-          <div>
-            <p class="footer__links-heading">More on MNTN</p>
-            <ul>
-              <li class="footer__link"><a href="">The Team</a></li>
-              <li class="footer__link"><a href="">Jobs</a></li>
-              <li class="footer__link"><a href="">Press</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+          <picture class="section__img">
+            <source
+              srcset="./images/02_350px.jpg"
+              type="image/jpeg"
+              media="(max-width:1199px)"
+            />
+            <img src="./images/02.jpg" alt="tourist" title="tourist" />
+          </picture>
+        </section>
 
-      <div class="vidget-container">
-        <div class="vidget">
-          <ul class="vidget__list">
-            <li><a class="vidget__link" href="#position00">Start</a></li>
-            <li><a class="vidget__link" href="#position01">01</a></li>
-            <li><a class="vidget__link" href="#position02">02</a></li>
-            <li><a class="vidget__link" href="#position03">03</a></li>
+        <section class="section" id="position03">
+          <div class="section__text-wrapper">
+            <span class="section__number">03</span>
+            <p class="section__topic">where you go is the key</p>
+            <h2 class="section__heading">Understand Your Map & Timing</h2>
+            <p class="section__text">
+              To start, print out the hiking guide and map. If it’s raining,
+              throw them in a Zip-Lock bag. Read over the guide, study the map,
+              and have a good idea of what to expect. I like to know what my
+              next landmark is as I hike. For example, I’ll read the guide and
+              know that say, in a mile, I make a right turn at the junction..
+            </p>
+            <button class="section__btn">
+              read more
+              <svg class="section__arrow" width="24px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+
+          <picture class="section__img">
+            <source
+              srcset="./images/03_350px.jpg"
+              type="image/jpeg"
+              media="(max-width:1199px)"
+            />
+            <img src="./images/03.jpg" alt="tourist" title="tourist" />
+          </picture>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__info">
+        <span class="logo">MNTN</span>
+        <p class="footer__MNTN-wish">
+          Get out there & discover your next slope, mountain & destination!
+        </p>
+        <p class="footer__copyright">
+          Copyright 2019 MNTN, Inc. Terms & Privacy
+        </p>
+      </div>
+
+      <div class="footer__more-block">
+        <div class="more-block__item">
+          <p class="footer__links-heading">More on The Blog</p>
+          <ul>
+            <li class="footer__link"><a href="">About MNTN</a></li>
+            <li class="footer__link">
+              <a href="">Contributors & Writers</a>
+            </li>
+            <li class="footer__link"><a href="">Write For Us</a></li>
+            <li class="footer__link"><a href="">Contact Us</a></li>
+            <li class="footer__link"><a href="">Privacy Policy</a></li>
           </ul>
-          <div class="vidget__decoration-line"></div>
         </div>
+
+        <div>
+          <p class="footer__links-heading">More on MNTN</p>
+          <ul>
+            <li class="footer__link"><a href="">The Team</a></li>
+            <li class="footer__link"><a href="">Jobs</a></li>
+            <li class="footer__link"><a href="">Press</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="vidget-container">
+      <div class="vidget">
+        <ul class="vidget__list">
+          <li>
+            <a class="vidget__link anim-items" href="#position00">Start</a>
+          </li>
+          <li>
+            <a class="vidget__link anim-items" href="#position01">01</a>
+          </li>
+          <li>
+            <a class="vidget__link anim-items" href="#position02">02</a>
+          </li>
+          <li>
+            <a class="vidget__link anim-items" href="#position03">03</a>
+          </li>
+        </ul>
       </div>
     </div>
 

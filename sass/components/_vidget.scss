@@ -5,13 +5,6 @@
   top: 40vh;
 }
 
-.vidget__decoration-line {
-  display: inline-block;
-  width: 3px;
-  height: 240px;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 .vidget__link {
   display: block;
   width: 75px;
@@ -19,6 +12,11 @@
   padding-right: 32px;
   text-align: end;
   line-height: 60px;
+  border-right: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.vidget__link.active {
+  border-right: 3px solid white;
 }
 
 .vidget-container {

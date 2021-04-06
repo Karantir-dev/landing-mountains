@@ -231,6 +231,7 @@ html {
 }
 
 body {
+  position: relative;
   color: white;
   background-color: #0b1d26;
   font-size: 1.125rem;
@@ -267,7 +268,12 @@ button {
 }
 
 .bg-image {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   margin: 0 auto;
   max-width: 1920px;
   background-repeat: no-repeat;
@@ -296,6 +302,11 @@ button {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.blur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 .header {
@@ -355,6 +366,7 @@ button {
     left: 0;
     padding-top: 70px;
     height: 100vh;
+    z-index: 1;
     text-align: center;
     font-size: 1.3rem;
     background-color: rgba(1, 1, 1, 0.5);
@@ -890,13 +902,6 @@ button {
   top: 40vh;
 }
 
-.vidget__decoration-line {
-  display: inline-block;
-  width: 3px;
-  height: 240px;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 .vidget__link {
   display: block;
   width: 75px;
@@ -904,6 +909,11 @@ button {
   padding-right: 32px;
   text-align: end;
   line-height: 60px;
+  border-right: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.vidget__link.active {
+  border-right: 3px solid white;
 }
 
 .vidget-container {
@@ -930,6 +940,7 @@ button {
   height: 30px;
   padding: 14px 0;
   position: relative;
+  z-index: 1;
 }
 
 .burger > span {
