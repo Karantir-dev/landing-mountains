@@ -267,6 +267,10 @@ button {
   padding: 0;
 }
 
+svg {
+  fill: white;
+}
+
 .bg-image {
   position: absolute;
   top: 0;
@@ -417,6 +421,10 @@ button {
   padding: 20px;
 }
 
+.dropdown__link:hover {
+  color: #fbd784;
+}
+
 @media screen and (min-width: 768px) {
   .dropdown__link {
     padding: 0;
@@ -433,6 +441,15 @@ button {
   color: inherit;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.header__account:hover {
+  color: #fbd784;
+}
+
+.header__account:hover .account__icon {
+  fill: #fbd784;
 }
 
 @media screen and (max-width: 767px) {
@@ -487,6 +504,10 @@ button {
   .social-net__link {
     margin: 24px 0 0 0;
   }
+}
+
+.social-net__icon:hover {
+  fill: #fbd784;
 }
 
 .hero {
@@ -563,6 +584,14 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hero__scroll-down:hover {
+  color: #fbd784;
+}
+
+.hero__scroll-down:hover .scroll-down__arrow {
+  fill: #fbd784;
 }
 
 @media screen and (max-width: 767px) {
@@ -708,6 +737,11 @@ button {
   color: #fbd784;
   line-height: 1.2;
   font-size: 1rem;
+  cursor: pointer;
+}
+
+.section__btn:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
@@ -910,6 +944,10 @@ button {
   text-align: end;
   line-height: 60px;
   border-right: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.vidget__link:hover {
+  color: #fbd784;
 }
 
 .vidget__link.active {

@@ -41,19 +41,34 @@ anchors.forEach((anchor) => {
 });
 
 // Индикация в виджете положения на странице
-window.addEventListener("scroll", (e) => {
-  console.log(123);
-});
+window.addEventListener("scroll", animOnScroll);
 
-const animItems = document.querySelectorAll(".anim-items");
+const animItems = document.querySelectorAll("[data-anim-item]");
+const documentAnchors = document.querySelectorAll("[data-document-anchor]");
 
-if (animItems.length > 0) {
-  function animOnScroll(params) {
-    for (let i = 0; i < animItems.length; i++) {
-      const animItem = animItems[i];
-      const animItemHeight = animItem.offsetHeight;
-      console.log(animItem);
-      console.log(animItemHeight);
+function animOnScroll() {
+  if (documentAnchors.length > 0) {
+    for (anchor of documentAnchors) {
+      if (isPartiallyVisible(anchor)) {
+        for (item of animItems) {
+          if (item.href.includes(anchor.id)) {
+            item.classList.add("active");
+          } else {
+            item.classList.remove("active");
+          }
+        }
+      }
     }
   }
 }
+
+function isPartiallyVisible(el) {
+  var elementBoundary = el.getBoundingClientRect();
+
+  var bottom = elementBoundary.bottom;
+  var height = elementBoundary.height;
+
+  return bottom > height * 0.6 && height * 0.6 + window.innerHeight >= bottom;
+}
+
+animOnScroll();

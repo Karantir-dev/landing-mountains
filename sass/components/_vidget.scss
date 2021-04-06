@@ -13,6 +13,10 @@
   text-align: end;
   line-height: 60px;
   border-right: 3px solid rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 .vidget__link.active {

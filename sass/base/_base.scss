@@ -45,6 +45,10 @@ button {
   padding: 0;
 }
 
+svg {
+  fill: white;
+}
+
 .logo {
   @extend %logo;
 }

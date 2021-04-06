@@ -72,6 +72,10 @@
   display: block;
   padding: 20px;
 
+  &:hover {
+    color: $accent-color;
+  }
+
   @media screen and($tablet-min-width ) {
     padding: 0;
   }
@@ -80,10 +84,17 @@
 .header__account {
   display: flex;
   align-items: center;
-
   color: inherit;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $accent-color;
+    .account__icon {
+      fill: $accent-color;
+    }
+  }
 
   @media screen and($mobile-max-width) {
     padding: 20px;
@@ -122,4 +133,8 @@
   @media screen and($tablet-min-width) {
     margin: 24px 0 0 0;
   }
+}
+
+.social-net__icon:hover {
+  fill: $accent-color;
 }

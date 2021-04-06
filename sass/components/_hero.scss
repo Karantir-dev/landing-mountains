@@ -53,6 +53,13 @@
   display: inline-flex;
   align-items: center;
 
+  &:hover {
+    color: $accent-color;
+    .scroll-down__arrow {
+      fill: $accent-color;
+    }
+  }
+
   @media screen and($mobile-max-width ) {
     font-size: 1rem;
   }
